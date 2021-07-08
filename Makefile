@@ -12,7 +12,7 @@ BUILD_DIR=$(CURDIR)/build
 all: builddir | softeng sre manager
 
 builddir:
-	mkdir $(BUILD_DIR)
+	mkdir -p $(BUILD_DIR)
 
 softeng: builddir
 	xelatex -output-directory=$(BUILD_DIR) softeng.tex
